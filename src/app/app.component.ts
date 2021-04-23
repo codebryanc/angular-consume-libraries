@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyLibOneService } from 'my-lib-one';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome Rockstar!!! ';
+
+  constructor(private myLibOneService: MyLibOneService) {
+
+  }
 }
